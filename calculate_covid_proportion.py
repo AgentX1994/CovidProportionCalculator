@@ -51,4 +51,4 @@ for index, (state, active_cases_per_million) in enumerate(data):
     if active_cases_per_million == -1.0:
         data[index] = (state, 'N/A')
 
-print(tabulate(data, ['State Name', 'Active Cases / 1M Population'], colalign=('right', 'decimal',), showindex=True))
+print(tabulate(data, ['State Name', 'Active Cases / 1M Population'], colalign=('right', 'right', 'decimal',), showindex=True))
